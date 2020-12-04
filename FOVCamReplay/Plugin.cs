@@ -30,7 +30,7 @@ namespace ReplayFOV
 			Log = logger;
 
 			PluginConfig.Instance = conf.Generated<PluginConfig>();
-			BSMLSettings.instance.AddSettingsMenu("Replay FOV", $"FOVCamReplay.Settings.bsml", SettingsController.instance);
+			BSMLSettings.instance.AddSettingsMenu("Replay FOV", $"ReplayFOV.Settings.bsml", SettingsController.instance);
 			Log.Info("Config loaded.");
 
 			Log.Info("Replay FOV initialized.");
