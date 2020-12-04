@@ -1,0 +1,6 @@
+﻿<bg xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='https://monkeymanboy.github.io/BSML-Docs/ https://raw.githubusercontent.com/monkeymanboy/BSML-Docs/gh-pages/BSMLSchema.xsd'>
+	<settings-container>
+		<slider-setting text='FOV' value='fov' hover-hint='Changes the FOV in ScoreSaber replays' min='30' max='140' integer-only='true' increment='5'></slider-setting>
+		<bool-setting text='Positional Correction' value='pos-correction' hover-hint='Moves the camera so it does not look detached from the sabers'></bool-setting>
+	</settings-container>
+</bg>
