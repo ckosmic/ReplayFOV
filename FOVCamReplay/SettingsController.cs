@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BeatSaberMarkupLanguage.Attributes;
 
-namespace FOVCamReplay
+namespace ReplayFOV
 {
 	public class SettingsController : PersistentSingleton<SettingsController>
 	{

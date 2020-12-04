@@ -10,7 +10,7 @@ using UnityEngine;
 using IPALogger = IPA.Logging.Logger;
 using BeatSaberMarkupLanguage.Settings;
 
-namespace FOVCamReplay
+namespace ReplayFOV
 {
 
 	[Plugin(RuntimeOptions.SingleStartInit)]
@@ -33,7 +33,7 @@ namespace FOVCamReplay
 			BSMLSettings.instance.AddSettingsMenu("Replay FOV", $"FOVCamReplay.Settings.bsml", SettingsController.instance);
 			Log.Info("Config loaded.");
 
-			Log.Info("FOVCamReplay initialized.");
+			Log.Info("Replay FOV initialized.");
 		}
 
 		#region BSIPA Config

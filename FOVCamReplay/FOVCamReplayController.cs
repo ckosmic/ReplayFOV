@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace FOVCamReplay
+namespace ReplayFOV
 {
 	/// <summary>
 	/// Monobehaviours (scripts) are added to GameObjects.

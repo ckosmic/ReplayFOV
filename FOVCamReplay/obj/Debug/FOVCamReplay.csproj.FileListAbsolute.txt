@@ -1,5 +1,3 @@
-C:\Users\ckosmic\source\repos\FOVCamReplay\FOVCamReplay\bin\Debug\FOVCamReplay.dll
-C:\Users\ckosmic\source\repos\FOVCamReplay\FOVCamReplay\bin\Debug\FOVCamReplay.pdb
 C:\Users\ckosmic\source\repos\FOVCamReplay\FOVCamReplay\bin\Debug\Microsoft.Build.Framework.dll
 C:\Users\ckosmic\source\repos\FOVCamReplay\FOVCamReplay\bin\Debug\Microsoft.Build.Framework.pdb
 C:\Users\ckosmic\source\repos\FOVCamReplay\FOVCamReplay\bin\Debug\Microsoft.Build.Tasks.Core.dll
@@ -23,8 +21,6 @@ C:\Users\ckosmic\source\repos\FOVCamReplay\FOVCamReplay\bin\Debug\LiteNetLib.dll
 C:\Users\ckosmic\source\repos\FOVCamReplay\FOVCamReplay\obj\Debug\FOVCamReplay.csprojAssemblyReference.cache
 C:\Users\ckosmic\source\repos\FOVCamReplay\FOVCamReplay\obj\Debug\FOVCamReplay.csproj.CoreCompileInputs.cache
 C:\Users\ckosmic\source\repos\FOVCamReplay\FOVCamReplay\obj\Debug\FOVCamReplay.csproj.CopyComplete
-C:\Users\ckosmic\source\repos\FOVCamReplay\FOVCamReplay\obj\Debug\FOVCamReplay.dll
-C:\Users\ckosmic\source\repos\FOVCamReplay\FOVCamReplay\obj\Debug\FOVCamReplay.pdb
 C:\Users\ckosmic\source\repos\FOVCamReplay\FOVCamReplay\bin\Debug\Main.dll
 C:\Users\ckosmic\source\repos\FOVCamReplay\FOVCamReplay\bin\Debug\VRUI.dll
 C:\Users\ckosmic\source\repos\FOVCamReplay\FOVCamReplay\bin\Debug\Polyglot.dll
@@ -41,3 +37,7 @@ C:\Users\ckosmic\source\repos\FOVCamReplay\FOVCamReplay\bin\Debug\Ookii.Dialogs.
 C:\Users\ckosmic\source\repos\FOVCamReplay\FOVCamReplay\bin\Debug\nunit.framework.dll
 C:\Users\ckosmic\source\repos\FOVCamReplay\FOVCamReplay\bin\Debug\Core.dll
 C:\Users\ckosmic\source\repos\FOVCamReplay\FOVCamReplay\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\ckosmic\source\repos\FOVCamReplay\FOVCamReplay\bin\Debug\ReplayFOV.dll
+C:\Users\ckosmic\source\repos\FOVCamReplay\FOVCamReplay\bin\Debug\ReplayFOV.pdb
+C:\Users\ckosmic\source\repos\FOVCamReplay\FOVCamReplay\obj\Debug\ReplayFOV.dll
+C:\Users\ckosmic\source\repos\FOVCamReplay\FOVCamReplay\obj\Debug\ReplayFOV.pdb
