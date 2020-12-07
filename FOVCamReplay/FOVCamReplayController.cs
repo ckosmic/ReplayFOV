@@ -18,7 +18,9 @@ namespace ReplayFOV
 	{
 		public static FOVCamReplayController Instance { get; private set; }
 		private GameObject camObj;
+		private GameObject newCam;
 		private int state = 0;
+		private float checkTimer = 0;
 
 		// These methods are automatically called by Unity, you should remove any you aren't using.
 		#region Monobehaviour Messages
@@ -43,20 +45,31 @@ namespace ReplayFOV
 		/// </summary>
 		private void Update() {
 			if (state == 1) {
-				if (camObj != null) {
-					Camera cam = camObj.GetComponent<Camera>();
-					cam.fieldOfView = PluginConfig.Instance.FOV;
-					state = 2;
-				} else {
+				if (Time.frameCount > checkTimer + 10) {
 					camObj = GameObject.Find("RecorderCamera");
+					if (camObj != null) {
+						state = 2;
+						Plugin.Log.Info("Is ScoreSaber replay");
+						camObj.GetComponent<Camera>().enabled = false;
+						newCam = Instantiate(camObj, camObj.transform.position, camObj.transform.rotation);
+						newCam.transform.name = "ReplayFOVCamera";
+						Camera cam = newCam.GetComponent<Camera>();
+						cam.enabled = true;
+						cam.fieldOfView = PluginConfig.Instance.FOV;
+					} else {
+						state = 0;
+						Plugin.Log.Info("Not a ScoreSaber replay");
+					}
 				}
 			}
-			
 		}
 
 		private void LateUpdate() {
-			if (state == 2 && PluginConfig.Instance.PositionalCorrection) {
-				camObj.transform.position = new Vector3(camObj.transform.position.x, camObj.transform.position.y, -(140 - PluginConfig.Instance.FOV)/90f);
+			// Hacky but it works
+			if (state == 2 && PluginConfig.Instance.PositionalCorrection && newCam != null) {
+				Vector3 newCamOffsetPos = new Vector3(camObj.transform.position.x, camObj.transform.position.y, camObj.transform.position.z - (140 - PluginConfig.Instance.FOV) / 90f + 1);
+				newCam.transform.position = newCamOffsetPos;
+				newCam.transform.rotation = camObj.transform.rotation;
 			}
 		}
 
@@ -75,12 +88,16 @@ namespace ReplayFOV
 			state = 1;
 			Plugin.Log.Info("OnGameSceneLoaded");
 			camObj = null;
+			newCam = null;
+			checkTimer = Time.frameCount;
 		}
 
 		public void OnLevelDidFinish(StandardLevelScenesTransitionSetupDataSO scene, LevelCompletionResults result) {
 			state = 0;
 			Plugin.Log.Info("OnLevelDidFinish");
+			Destroy(newCam);
 			camObj = null;
+			newCam = null;
 		}
 	}
 }
