@@ -3,7 +3,7 @@
   "id": "ReplayFOV",
   "name": "Replay FOV",
   "author": "ckosmic",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Allows you to set the FOV of ScoreSaber replays.",
   "gameVersion": "1.13.0",
   "dependsOn": {
